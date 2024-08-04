@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Lukáš Matějů -->
+  <!-- lukas.mateju9@gmail.com -->
+  <!-- Discord: Lukáš M. -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4049ae6724.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Projekt 3</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="./img/logo.png" alt="logo" />
+      </div>
+
+      <div class="switcher-box">
+        <span class="switcher-description">
+          <p>Ligth</p>
+        </span>
+
+        <label class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+
+        <span class="switcher-description">
+          <p>Dark</p>
+        </span>
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul>
+          <li><a href="#">Domů</a></li>
+          <li><a href="#tips">Tipy na výlet</a></li>
+          <li><a href="#about-me">O mně</a></li>
+          <li><a href="#registration">Registrace</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+      </div>
+    </header>
+
+    <!-- Tips -->
+    <section class="tips-section" id="tips">
+      <div class="content-container">
+        <div class="tips-wrapper">
+          <div class="tips-intro">
+            <h1>Tipy na výlet</h1>
+            <div class="tips-text">
+              Na této stránce Vám ukážu tipy na různá místa, která stojí za to
+              navštívit. Nejraději chodím na rozhledny nebo vyhlídky, protože je
+              tam vždy krásný výhled na krajinu. Ovšem to není to jediné co tu
+              najdete, brzy se můžete těšit i na záběry z různých vrcholů a
+              neobyčejných míst, které můžete v Česku vidět.
+            </div>
+          </div>
+
+          <!-- Gallery -->
+          <div class="gallery">
+            <div class="gallery-item">
+              <img
+                src="./img/akatova-vez.jpg"
+                alt="Akátová věž"
+                class="scalableImage"
+              />
+              <div class="gallery-text">
+                <a
+                  href="https://www.kudyznudy.cz/aktivity/akatova-rozhledna-v-zidlochovicich"
+                  target="_blank"
+                  >Akátová věž</a
+                >
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="./img/kobyli-vrch.jpg"
+                alt="Kobylí vrch"
+                class="scalableImage"
+              />
+              <div class="gallery-text">
+                <a
+                  href="https://www.kudyznudy.cz/aktivity/unikatni-spiralova-rozhledna-v-kobyli"
+                  target="_blank"
+                  >Kobylí vrch</a
+                >
+              </div>
+            </div>
+
+            <div class="gallery-item">
+              <img
+                src="./img/vartovna.jpg"
+                alt="Vartovna"
+                class="scalableImage"
+              />
+              <div class="gallery-text">
+                <a
+                  href="https://www.kudyznudy.cz/aktivity/rozhledna-na-kopci-vartovna"
+                  target="_blank"
+                  >Vartovna</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me-section" id="about-me">
+      <div class="content-container">
+        <div class="about-me-wrapper">
+          <div class="about-me">
+            <h2 class="about-me-heading">O mně</h2>
+            <img src="./img/apetor.PNG" alt="Apetor" class="about-me-image" />
+            <p class="about-me-text">
+              Jmenuji se Lukáš, je mi 30 let a pocházím z Valašska. Momentálně
+              žiji v malé vesnici jižně od Brna. Mezi mé záliby patří cvičení,
+              vaření, auta, lukostřelba a turistika. Zde se budeme zaměřovat na
+              to poslední, tedy turistiku. Ukážu vám, jaké místa jsem navštívil
+              a doporučím, která místa stojí za to vidět na vlastní oči.
+            </p>
+          </div>
+
+          <!-- Form - registration -->
+          <div class="form-wrapper" id="registration">
+            <h2 class="form-heading">Registrace</h2>
+            <p class="form-text">
+              Pokud se registrujete, uvidíte víc obsahu z mých cest a najdete tu
+              také přímo odkazy na připravené pěší trasy.
+            </p>
+            <p class="notifName">Vyplňte jméno a příjmení</p>
+            <p class="notifEmail">Vyplňte Email</p>
+            <p class="notifPassword1">Vyplňte Heslo</p>
+            <p class="notifPassword2">Vyplňte Heslo znovu</p>
+            <p class="wrongPassword">Hesla se neshodují</p>
+
+            <form>
+              <input
+                type="text"
+                class="fullName"
+                placeholder="Jméno a příjmení"
+              />
+              <br />
+              <input type="email" class="email" placeholder="Email" />
+              <br />
+              <input type="password" class="password1" placeholder="Heslo" />
+              <br />
+              <input
+                type="password"
+                class="password2"
+                placeholder="Heslo znovu"
+              />
+              <br />
+              <input type="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <footer class="footer" id="contact">
+      <div class="contact">
+        <a href="#" target="_self">Contact</a>
+      </div>
+
+      <div class="footer-text">
+        ©2024 - Váš cestovní průvodce. Všechna práva vyhrazena.
+      </div>
+
+      <div class="button-up">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
